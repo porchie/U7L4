@@ -4,17 +4,26 @@ import java.util.Arrays;
 public class MainRunner {
     public static void main(String[] args) {
 
-        String mySentence = "This is my sentence!";
-        ArrayList<String> reversedWords = ArrayListAlgorithms.parseWordsAndReverse(mySentence);
-        System.out.println(reversedWords);
+        int[] intList18 = {1, 2, 3, 2, 4, 5, 5, 6};
+        ArrayList<Integer> modes = ArrayListAlgorithms.modes(intList18);
+        System.out.println(modes);
 
-        String mySentence2 = "It is a lovely day outside today don't you think?";
-        ArrayList<String> reversedWords2 = ArrayListAlgorithms.parseWordsAndReverse(mySentence2);
-        System.out.println(reversedWords2);
+        int[] intList19 = {1, 2, 2, 3, 4, 5, 5, 6, 6, 7, 6};
+        ArrayList<Integer> modes2 = ArrayListAlgorithms.modes(intList19);
+        System.out.println(modes2);
 
-        String mySentence3 = "Hello";
-        ArrayList<String> reversedWords3 = ArrayListAlgorithms.parseWordsAndReverse(mySentence3);
-        System.out.println(reversedWords3);
+        int[] intList20 = {1, 2, 1, 2, 4, 1, 2, 4, 1, 1, 3};
+        ArrayList<Integer> modes3 = ArrayListAlgorithms.modes(intList20);
+        System.out.println(modes3);
+
+        int[] intList21 = {1, 2, 3, 4, 3, 2, 1, 4, 1, 2, 3};
+        ArrayList<Integer> modes4 = ArrayListAlgorithms.modes(intList21);
+        System.out.println(modes4);
+
+        int[] intList22 = {1, 2, 3, 4, 5, 6};
+        ArrayList<Integer> modes5 = ArrayListAlgorithms.modes(intList22);
+        System.out.println(modes5);
+
 
     }
 }
